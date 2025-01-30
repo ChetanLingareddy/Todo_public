@@ -11,6 +11,7 @@ def add_todo():
     functions.write_todos(todos)
 
 st.title("My Todo List ☑️")
+
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key = todo)
     if checkbox:
